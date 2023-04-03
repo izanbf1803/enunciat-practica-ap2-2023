@@ -131,7 +131,7 @@ class Logger:
         print(t, 'DELIVER', identifier, file=self._file)
 
     def move(self, t: TimeStamp, direction: Direction) -> None:
-        print(t, 'MOVE', direction, file=self._file)
+        print(t, 'MOVE', int(direction), file=self._file)
 
     def add(self, t: TimeStamp, identifier: Identifier) -> None:
         print(t, 'ADD', identifier, file=self._file)
